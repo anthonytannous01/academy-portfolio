@@ -5,10 +5,9 @@
     <div class="about-containers">
       <app-project-card
         *ngFor="let project of projects"
+        [img]="project.img"
+        [imgText]="project.imgText"
         [title]="project.title"
-        [image]="project.image"
-        [github]="project.github"
-        [liveDemo]="project.liveDemo"
       ></app-project-card>
     </div>
   </div>
